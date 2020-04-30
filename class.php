@@ -2,14 +2,17 @@
 // Writen by : Arvind Singh (Sr. Software Developer)
 
 class Database{
-
+  // DB_USERNAME=uppradh1_arvind
+  // DB_PASSWORD={r!TzuP@rl;M
+  // DB_NAME = uppradh1_reservations
+  // host =198.49.76.242
    public $con;
    public $totalSeat = 80;
    public $success = '';
-   protected $host = 'localhost';
-   protected $user = 'root';
-   protected $pass = '';
-   protected $db = 'reservations';
+   protected $host = '198.49.76.242';
+   protected $user = 'uppradh1_arvind';
+   protected $pass = '{r!TzuP@rl;M';
+   protected $db = 'uppradh1_reservations';
 
    public function __construct(){
    	$this->con = mysqli_connect($this->host,$this->user,$this->pass,$this->db);
